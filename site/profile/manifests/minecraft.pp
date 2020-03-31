@@ -1,3 +1,5 @@
 class profile::minecraft { 
-  include minecraft
+  class {'minecraft': 
+    intall_dir => '/srv/minecraft',
+  }
 }
